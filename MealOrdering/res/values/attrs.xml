@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClearableEditText">
+        <attr name="clearBtnDrawable" format="reference"></attr>
+        <attr name="clearBtnDrawableHeight" format="reference"></attr>
+        <attr name="clearBtnDrawableWidth" format="reference"></attr>            
+        <attr name="android:maxLines"></attr>
+        <attr name="android:maxLength"></attr>
+        <attr name="android:inputType"></attr>
+        <attr name="android:ems"></attr>
+        <attr name="android:hint"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="DropdownView">
+        <attr name="android:maxLines"></attr>
+        <attr name="android:maxLength"></attr>
+        <attr name="android:ems"></attr>
+        <attr name="android:focusable"></attr>
+        <attr name="android:focusableInTouchMode"></attr>
+        <attr name="android:hint"></attr>
+    </declare-styleable>
+</resources>

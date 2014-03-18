@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:loginpwd="http://schemas.android.com/apk/res-auto/com.lonuery.mealordering"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+            
+    <LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<ImageView
+		    android:id="@+id/avatar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30.0dip"
+			android:layout_gravity="center"
+			android:contentDescription="@string/avatar"
+			android:src="@drawable/login_default_avatar">
+		</ImageView>
+		
+		<RelativeLayout
+		    android:id="@+id/auto_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+
+		  <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15.0dip"
+		        android:layout_marginRight="15.0dip"
+		        android:layout_marginTop="10.0dip"
+		        android:background="@drawable/login_input" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="45.0dip"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:gravity="center"
+		            android:paddingLeft="16.0dip"
+		            android:singleLine="true"
+		            android:textSize="16.0sp" >
+		        </TextView>
+
+		        <com.lonuery.mealordering.DropdownView
+		            android:id="@+id/userId"
+		            android:layout_width="match_parent"
+		            android:layout_height="44.0dip"
+		            android:gravity="center"		            
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentRight="true"
+		            
+		            android:inputType="number"
+					android:maxLines="1"
+					android:maxLength="16"
+					android:ems="10"
+					android:hint="@string/defaultAccount">
+		        </com.lonuery.mealordering.DropdownView>
+
+		        <View
+		            android:id="@+id/dropview"
+		            android:layout_width="match_parent"
+		            android:layout_height="1.0px"
+		            android:layout_below="@+id/userId"
+		            android:paddingLeft="20.0dip"
+		            android:paddingRight="20.0dip"
+		            android:background="#FFD9D9D9">
+		        </View>
+	        
+		         <com.lonuery.mealordering.ClearableEditText
+		             android:id="@+id/password"
+		             android:layout_width="match_parent"
+		             android:layout_height="44.0dip"
+		             android:layout_alignParentLeft="true"
+		             android:layout_alignParentRight="true"
+		             android:layout_below="@+id/dropview"
+		             android:gravity="center"		             
+		             android:inputType="numberPassword"
+					 android:maxLines="1"
+					 android:maxLength="16"
+					 android:hint="@string/defaultPsw"
+					 android:ems="10"
+		             loginpwd:clearBtnDrawable="@drawable/common_input_box_clear"
+		             loginpwd:clearBtnDrawableHeight="@dimen/clearable_edittext_layout_et_height"
+		             loginpwd:clearBtnDrawableWidth="@dimen/clearable_edittext_layout_et_width" >
+		    	</com.lonuery.mealordering.ClearableEditText>
+		    </RelativeLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/login_layout"
+		        android:layout_width="match_parent"
+		        android:layout_height="50.0dip"
+		        android:layout_marginTop="130.0dip"
+		        android:paddingLeft="15.0dip"
+		        android:paddingRight="15.0dip">
+		        <Button
+		            android:id="@+id/login"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/btn_login"
+		            android:gravity="center"
+		            android:paddingLeft="20.0dip"
+		            android:paddingRight="20.0dip"
+		            android:text="@string/login_button"
+		            android:textColor="@color/white"
+		            android:textSize="17.0sp"/>
+		    </LinearLayout>  	  
+		</RelativeLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

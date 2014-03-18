@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+     <EditText
+         android:id="@+id/dropdown_userId"
+         android:layout_width="wrap_content"
+         android:layout_height="44.0dip"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="15.0dip"
+         android:layout_toLeftOf="@+id/layout"
+         android:layout_toRightOf="@+id/layout"
+         android:background="@null"
+         android:hint="@string/defaultAccount"
+         android:includeFontPadding="false"
+         android:maxLines="1" />
+
+     <LinearLayout
+         android:id="@+id/layout"
+         android:layout_width="wrap_content"
+         android:layout_height="44.0dip"
+         android:layout_alignBottom="@+id/dropdown_userId"
+         android:layout_alignParentRight="true">
+         <TextView
+             android:id="@+id/delete_userId"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginRight="15.0dp"
+             android:background="@drawable/unipay_tenpay_del"
+             android:gravity="center"
+             android:visibility="gone"/>
+         <ImageButton
+             android:id="@+id/togglebutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginRight="15.0dp"
+             android:background="@drawable/login_more"
+             android:contentDescription="@string/delete_btn"
+             android:gravity="center"
+             android:visibility="gone"/>
+     </LinearLayout>
+
+</RelativeLayout>
